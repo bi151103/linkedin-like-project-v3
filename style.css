@@ -8,6 +8,7 @@
   --spacing-5px: 5px;
   --spacing-50px: 50px;
   --spacing-sm-img: 25px;
+  --spacing-sm-noti-bubble: 20px;
 }
 
 @layer base {
