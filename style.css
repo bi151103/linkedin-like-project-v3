@@ -3,6 +3,11 @@
 @theme {
   --color-primary-bg: #0a66c2;
   --color-primary-tx: #5f6163;
+  --spacing-10px: 10px;
+  --spacing-20px: 20px;
+  --spacing-5px: 5px;
+  --spacing-50px: 50px;
+  --spacing-sm-img: 25px;
 }
 
 @layer base {
@@ -27,13 +32,13 @@
     font-size: 14px;
     color: var(--color-primary-tx);
     background-color: #f4f2ee;
-    line-height: initial;
+    line-height: revert;
   }
 
   img {
-    display: initial;
-    width: initial;
-    height: initial;
+    display: revert;
+    width: revert;
+    height: revert;
   }
 
   button {
@@ -42,5 +47,22 @@
 
   a {
     color: var(--color-primary-bg);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: revert;
+    font-weight: revert;
+  }
+}
+
+@utility dot {
+  &::after {
+    content: "\00b7";
+    font-weight: bold;
   }
 }
