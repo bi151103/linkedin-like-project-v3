@@ -82,6 +82,20 @@
   }
 }
 
+@utility plus-before {
+  &::before {
+    content: "";
+    background-image: url(./images/icons8-plus-100.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+}
+
 @utility section-title {
   font-size: 1.6rem;
   font-weight: 400;
