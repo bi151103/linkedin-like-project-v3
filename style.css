@@ -4,6 +4,7 @@
   --color-primary-bg: #0a66c2;
   --color-primary-tx: #5f6163;
   --spacing-10px: 10px;
+  --spacing-15px: 15px;
   --spacing-20px: 20px;
   --spacing-5px: 5px;
   --spacing-50px: 50px;
@@ -30,7 +31,7 @@
       "Apple Color Emoji",
       "Segoe UI Emoji",
       "Segoe UI Symbol";
-    font-size: 14px;
+    font-size: 10px;
     color: var(--color-primary-tx);
     background-color: #f4f2ee;
     line-height: revert;
@@ -44,10 +45,12 @@
 
   button {
     cursor: pointer;
+    font-weight: 600;
   }
 
   a {
     color: var(--color-primary-bg);
+    font-weight: 600;
   }
 
   h1,
@@ -59,11 +62,39 @@
     font-size: revert;
     font-weight: revert;
   }
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.25;
+  }
 }
 
 @utility dot {
   &::after {
     content: "\00b7";
     font-weight: bold;
+    padding: 0 5px;
   }
+}
+
+@utility section-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+@utility text-medium {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+@utility text-small {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.25;
 }
