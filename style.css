@@ -3,6 +3,7 @@
 @theme {
   --color-primary-bg: #0a66c2;
   --color-primary-tx: #5f6163;
+  --color-separator-line: #ebebeb;
   --spacing-10px: 10px;
   --spacing-15px: 15px;
   --spacing-20px: 20px;
@@ -109,6 +110,12 @@
 
 @utility text-small {
   font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+@utility text-xs-small {
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.25;
 }
