@@ -13,7 +13,6 @@
   --spacing-sm-img: 25px;
   --spacing-md-img: 50px;
   --spacing-sm-noti-bubble: 20px;
-  --leading-*: initial;
 }
 
 @layer base {
