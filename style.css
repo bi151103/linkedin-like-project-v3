@@ -125,6 +125,21 @@
   }
 }
 
+@utility chevron-down-after {
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url(./images/icons8-chevron-down-100.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+}
+
 @utility experience-separator-line {
   &::after {
     content: "";
