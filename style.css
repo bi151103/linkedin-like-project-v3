@@ -3,6 +3,7 @@
 @theme {
   --color-primary-bg: #0a66c2;
   --color-primary-tx: #5f6163;
+  --color-emphasis-tx: #000000e6;
   --color-separator-line: #ebebeb;
   --spacing-10px: 10px;
   --spacing-15px: 15px;
@@ -47,6 +48,7 @@
   button {
     cursor: pointer;
     font-weight: 600;
+    color: var(--color-primary-bg);
   }
 
   a {
@@ -124,4 +126,12 @@
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.25;
+}
+
+@utility line-clamp-* {
+  display: -webkit-box;
+  -webkit-line-clamp: --value(integer);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
